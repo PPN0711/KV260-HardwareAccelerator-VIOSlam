@@ -1,0 +1,29 @@
+# 1. File thực thi (Executables)
+*.exe
+
+# 2. File rác của hệ điều hành Mac
+.DS_Store
+
+# 3. Dữ liệu Dataset (Quá nặng, không up lên GitHub)
+data/euroc/
+
+# 4. Toàn bộ thư mục Build của Vitis HLS
+hls/delta_trust_hls/
+hls/workspace_v2/hls_final/delta_trust_top/
+hls/workspace_v2/_ide/
+hls/_ide/
+
+# 5. File Backup và Output sinh ra tự động
+*.bak
+*.save
+stage3_trajectory.csv
+
+# 6. Các file rác C++ khác
+*.o
+*.obj
+
+_deps/
+build/
+workspace/_ide/
+.cache/
+*.tar.gz

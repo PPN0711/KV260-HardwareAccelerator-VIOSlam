@@ -1,0 +1,25 @@
+========================================
+  DeltaTrust-VIO Stage 1
+========================================
+
+[EurocReader] 29120 IMU, 2895 GT
+Using 20 keyframes
+Added 19 IMU factors
+Graph: 20 poses, 30 pts, dim = 270
+
+Building Hessian...
+H size: 270x270
+H min eig: 0.000437242
+
+Applying Schur...
+S size: 180x180
+S min eig: 0.00112258
+
+=== Stage 0 test ===
+LDL^T ok, min(D) = 0.173038
+Dogleg kind: dogleg_interp, ||step|| = 1
+Rank-1 update ok: YES
+
+========================================
+  STAGE 1 COMPLETE
+========================================

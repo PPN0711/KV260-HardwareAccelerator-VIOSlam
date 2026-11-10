@@ -1,0 +1,68 @@
+========================================
+  DeltaTrust-VIO - Stage 3
+  Optimization + ATE Evaluation
+========================================
+
+[EurocReader] 29120 IMU, 2895 GT
+Using 30 keyframes
+
+=== Building Factor Graph ===
+  IMU factors: 29
+  Graph: 30 poses, 50 points
+
+=== Running Optimization ===
+  Iter  |  Cost       |  delta_norm  |  radius   |  status
+  ------+-------------+--------------+-----------+--------
+  0     |   1.314e+07 |            - |         - | init
+     1 |   1.271e+07 |    2.000e-01 |    0.2000 | accept
+     2 |   9.999e+06 |    2.000e-01 |    0.2000 | accept
+     3 |   7.904e+07 |    2.000e-01 |    0.1000 | reject
+     4 |   7.419e+06 |    1.000e-01 |    0.1000 | accept
+     5 |   9.864e+06 |    1.000e-01 |    0.0500 | reject
+     6 |   8.340e+06 |    5.000e-02 |    0.0250 | reject
+     7 |   7.616e+06 |    2.500e-02 |    0.0125 | reject
+     8 |   7.404e+06 |    1.250e-02 |    0.0125 | accept
+     9 |   7.556e+06 |    1.250e-02 |    0.0063 | reject
+    10 |   7.466e+06 |    6.250e-03 |    0.0031 | reject
+    11 |   7.431e+06 |    3.125e-03 |    0.0016 | reject
+    12 |   7.417e+06 |    1.562e-03 |    0.0008 | reject
+    13 |   7.410e+06 |    7.812e-04 |    0.0004 | reject
+    14 |   7.407e+06 |    3.906e-04 |    0.0002 | reject
+    15 |   7.406e+06 |    1.953e-04 |    0.0001 | reject
+    16 |   7.405e+06 |    9.766e-05 |    0.0000 | reject
+    17 |   7.405e+06 |    4.883e-05 |    0.0000 | reject
+    18 |   7.405e+06 |    2.441e-05 |    0.0000 | reject
+    19 |   7.404e+06 |    1.221e-05 |    0.0000 | reject
+    20 |   7.404e+06 |    6.104e-06 |    0.0000 | reject
+    21 |   7.404e+06 |    3.052e-06 |    0.0000 | reject
+    22 |   7.404e+06 |    1.526e-06 |    0.0000 | reject
+  Converged: radius < 0.0000
+
+  Optimization time: 363.8 ms
+  Iterations: 22
+  Final cost: 7.404e+06
+  Converged: YES
+
+=== Computing ATE ===
+  Number of poses : 30
+  ATE RMSE        : 0.0043 m
+  ATE Mean        : 0.0031 m
+  ATE Median      : 0.0023 m
+  ATE Std         : 0.0031 m
+  ATE Max         : 0.0169 m
+  Trajectory scale: 2.4386 m (avg)
+  Relative error  : 0.18 %
+
+  Trajectory saved: stage3_trajectory.csv
+
+========================================
+  STAGE 3 SUMMARY
+========================================
+  Optimization   : 22 iters, 363.8 ms
+  ATE RMSE       : 0.0043 m
+  Relative error : 0.18 %
+  Converged      : YES
+  Total time     : 721.6 ms
+========================================
+  STAGE 3 COMPLETE
+========================================
